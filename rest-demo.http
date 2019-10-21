@@ -1,0 +1,38 @@
+GET http://localhost:8000/rest/baseball_cards/
+
+###
+
+POST http://localhost:8000/rest/baseball_cards/
+
+{
+    "autographed": false,
+    "condition": "Excellent",
+    "brand": "Topps",
+    "year": 1991,
+    "number": 278,
+    "value": 10.00,
+    "quantity": 1,
+    "player": "Alex Fernandez",
+    "team": "White Sox",
+    "position": "Pitcher"
+}
+
+###
+
+GET http://localhost:8000/rest/user/1/baseball_cards/
+
+###
+
+GET http://localhost:8000/rest/collections/
+
+###
+
+POST http://localhost:8000/rest/collections/
+
+{
+  "user": 1,
+  "card": 1,
+  "quantity": 3
+}
+
+###
